@@ -21,5 +21,5 @@ jobs:
     - run: ko build -B .
       env:
        #GOFLAGS: -ldflags=-X=main.Ref=${{ github.ref }}
-       GOFLAGS: -ldflags=-X=main.RefName=${{ github.ref_name }}
-       #GOFLAGS: -ldflags=-X=main.RefType=${{ github.ref_type }}
+       #GOFLAGS: -ldflags=-X=main.RefName=${{ github.ref_name }}
+       GOFLAGS: -ldflags=-X=main.RefType=${{ github.ref_type }}
