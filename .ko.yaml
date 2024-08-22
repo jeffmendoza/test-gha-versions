@@ -1,5 +1,5 @@
 builds:
-- id: main
+- id: qwer
   ldflags:
   - -X=main.Branch={{.Git.Branch}}
   - -X=main.Tag={{.Git.Tag}}
