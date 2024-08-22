@@ -20,4 +20,4 @@ jobs:
     - uses: ko-build/setup-ko@v0.7
     - run: ko build -B .
       env:
-      - GOFLAGS: "-ldflags=\"-X=main.Ref=${{ github.ref }} -X=main.RefName=${{ github.ref_name }} -X=main.RefType=${{ github.ref_type }}\""
+       GOFLAGS: -ldflags="-X=main.Ref=${{ github.ref }} -X=main.RefName=${{ github.ref_name }} -X=main.RefType=${{ github.ref_type }}"
