@@ -1,0 +1,9 @@
+builds:
+- id: main
+  ldflags:
+  - -X=main.Branch={{.Git.Branch}}
+  - -X=main.Tag={{.Git.Tag}}
+  - -X=main.Commit={{.Git.ShortCommit}}
+  - -X=main.Date={{.Git.CommitDate}}
+  - -X=main.TS={{.Git.CommitTimestamp}}
+  - -X=main.State={{.Git.TreeState}}
