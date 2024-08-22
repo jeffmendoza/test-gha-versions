@@ -18,8 +18,4 @@ jobs:
         go-version: '1.22'
         check-latest: true
     - uses: ko-build/setup-ko@v0.7
-    - run: ko build -B .
-      env:
-       #GOFLAGS: -ldflags=-X=main.Ref=${{ github.ref }}
-       GOFLAGS: -ldflags=-X=main.RefName=${{ github.ref_name }}
-       #GOFLAGS: -ldflags=-X=main.RefType=${{ github.ref_type }}
+    - run: ko build -B

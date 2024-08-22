@@ -1,6 +1,5 @@
 builds:
-- id: qwer
-  ldflags:
+- ldflags:
   - -X=main.Branch={{.Git.Branch}}
   - -X=main.Tag={{.Git.Tag}}
   - -X=main.Commit={{.Git.ShortCommit}}
